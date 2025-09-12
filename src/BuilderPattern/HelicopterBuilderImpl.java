@@ -10,33 +10,39 @@ public class HelicopterBuilderImpl implements IAircraftBuilder{
 
 
     @Override
-    public void setName(String name) {
+    public HelicopterBuilderImpl setName(String name) {
         this.name = name;
+        return this;
     }
 
     @Override
-    public void setLength(double length) {
+    public HelicopterBuilderImpl setLength(double length) {
         this.length = length;
+        return this;
     }
 
     @Override
-    public void setWingspan(double wingspan) {
+    public HelicopterBuilderImpl setWingspan(double wingspan) {
         this.wingspan = wingspan;
+        return this;
     }
 
     @Override
-    public void setHeight(double height) {
+    public HelicopterBuilderImpl setHeight(double height) {
         this.height = height;
+        return this;
     }
 
     @Override
-    public void setFlightRange(int flightRange) {
+    public HelicopterBuilderImpl setFlightRange(int flightRange) {
         this.flightRange = flightRange;
+        return this;
     }
 
     @Override
-    public void setMaxCruisingSpeed(int maxCruisingSpeed) {
+    public HelicopterBuilderImpl setMaxCruisingSpeed(int maxCruisingSpeed) {
         this.maxCruisingSpeed = maxCruisingSpeed;
+        return this;
     }
 
     public Helicopter build(){

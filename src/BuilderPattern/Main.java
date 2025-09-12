@@ -3,14 +3,10 @@ package BuilderPattern;
 public class Main {
     public static void main(String[] args) {
 
-        PlaneBuilderImpl planeBuilder = new PlaneBuilderImpl();
-        Director.constructBoeing747(planeBuilder);
-        Plane planeBoeing747 = planeBuilder.build();
+        Plane planeBoeing747 = Director.constructBoeing747();
         System.out.println(planeBoeing747);
 
-        HelicopterBuilderImpl helicopterBuilder = new HelicopterBuilderImpl();
-        Director.constructBell206(helicopterBuilder);
-        Helicopter helicopter = helicopterBuilder.build();
+        Helicopter helicopter = Director.constructBell206();
         System.out.println(helicopter);
 
     }

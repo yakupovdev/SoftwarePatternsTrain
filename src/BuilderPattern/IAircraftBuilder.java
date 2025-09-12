@@ -1,10 +1,10 @@
 package BuilderPattern;
 
 public interface IAircraftBuilder {
-    void setName(String name);
-    void setLength(double length);
-    void setWingspan(double wingspan);
-    void setHeight(double height);
-    void setFlightRange(int flightRange);
-    void setMaxCruisingSpeed(int maxCruisingSpeed);
+    IAircraftBuilder setName(String name);
+    IAircraftBuilder setLength(double length);
+    IAircraftBuilder setWingspan(double wingspan);
+    IAircraftBuilder setHeight(double height);
+    IAircraftBuilder setFlightRange(int flightRange);
+    IAircraftBuilder setMaxCruisingSpeed(int maxCruisingSpeed);
 }

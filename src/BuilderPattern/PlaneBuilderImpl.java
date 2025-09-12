@@ -10,33 +10,39 @@ public class PlaneBuilderImpl implements IAircraftBuilder{
 
 
     @Override
-    public void setName(String name) {
+    public PlaneBuilderImpl setName(String name) {
         this.name = name;
+        return this;
     }
 
     @Override
-    public void setLength(double length) {
+    public PlaneBuilderImpl setLength(double length) {
         this.length = length;
+        return this;
     }
 
     @Override
-    public void setWingspan(double wingspan) {
+    public PlaneBuilderImpl setWingspan(double wingspan) {
         this.wingspan = wingspan;
+        return this;
     }
 
     @Override
-    public void setHeight(double height) {
+    public PlaneBuilderImpl setHeight(double height) {
         this.height = height;
+        return this;
     }
 
     @Override
-    public void setFlightRange(int flightRange) {
+    public PlaneBuilderImpl setFlightRange(int flightRange) {
         this.flightRange = flightRange;
+        return this;
     }
 
     @Override
-    public void setMaxCruisingSpeed(int maxCruisingSpeed) {
+    public PlaneBuilderImpl setMaxCruisingSpeed(int maxCruisingSpeed) {
         this.maxCruisingSpeed = maxCruisingSpeed;
+        return this;
     }
 
     public Plane build(){
