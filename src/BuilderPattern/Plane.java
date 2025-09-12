@@ -1,3 +1,6 @@
+package BuilderPattern;
+
+
 public class Plane {
     private final String type =  "Plane";
     private final String name;
