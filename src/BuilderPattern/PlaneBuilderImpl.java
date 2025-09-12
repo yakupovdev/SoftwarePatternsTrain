@@ -45,8 +45,32 @@ public class PlaneBuilderImpl implements IAircraftBuilder{
         return this;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getWingspan() {
+        return wingspan;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public int getFlightRange() {
+        return flightRange;
+    }
+
+    public int getMaxCruisingSpeed() {
+        return maxCruisingSpeed;
+    }
+
     public Plane build(){
-        return new Plane(name,length,wingspan,height,flightRange,maxCruisingSpeed);
+        return new Plane(this);
     }
 
 

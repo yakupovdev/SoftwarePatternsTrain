@@ -45,7 +45,31 @@ public class HelicopterBuilderImpl implements IAircraftBuilder{
         return this;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getWingspan() {
+        return wingspan;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public int getFlightRange() {
+        return flightRange;
+    }
+
+    public int getMaxCruisingSpeed() {
+        return maxCruisingSpeed;
+    }
+
     public Helicopter build(){
-        return new Helicopter(name,length,wingspan,height,flightRange,maxCruisingSpeed);
+        return new Helicopter(this);
     }
 }
