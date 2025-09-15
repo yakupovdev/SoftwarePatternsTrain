@@ -45,6 +45,10 @@ public class PlaneBuilderImpl implements IAircraftBuilder{
         return this;
     }
 
+    public Plane build(){
+        return new Plane(this);
+    }
+
     public String getName() {
         return name;
     }
@@ -68,10 +72,4 @@ public class PlaneBuilderImpl implements IAircraftBuilder{
     public int getMaxCruisingSpeed() {
         return maxCruisingSpeed;
     }
-
-    public Plane build(){
-        return new Plane(this);
-    }
-
-
 }

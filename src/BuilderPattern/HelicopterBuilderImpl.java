@@ -45,6 +45,10 @@ public class HelicopterBuilderImpl implements IAircraftBuilder{
         return this;
     }
 
+    public Helicopter build(){
+        return new Helicopter(this);
+    }
+
     public String getName() {
         return name;
     }
@@ -67,9 +71,5 @@ public class HelicopterBuilderImpl implements IAircraftBuilder{
 
     public int getMaxCruisingSpeed() {
         return maxCruisingSpeed;
-    }
-
-    public Helicopter build(){
-        return new Helicopter(this);
     }
 }

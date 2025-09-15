@@ -10,6 +10,14 @@ public class Helicopter {
     private int maxCruisingSpeed;
 
 
+    public Helicopter(HelicopterBuilderImpl builder) {
+        this.name = builder.getName();
+        this.length = builder.getLength();
+        this.wingspan = builder.getWingspan();
+        this.height = builder.getHeight();
+        this.flightRange = builder.getFlightRange();
+        this.maxCruisingSpeed = builder.getMaxCruisingSpeed();
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -33,15 +41,6 @@ public class Helicopter {
 
     public void setMaxCruisingSpeed(int maxCruisingSpeed) {
         this.maxCruisingSpeed = maxCruisingSpeed;
-    }
-
-    public Helicopter(HelicopterBuilderImpl builder) {
-        this.name = builder.getName();
-        this.length = builder.getLength();
-        this.wingspan = builder.getWingspan();
-        this.height = builder.getHeight();
-        this.flightRange = builder.getFlightRange();
-        this.maxCruisingSpeed = builder.getMaxCruisingSpeed();
     }
 
     @Override

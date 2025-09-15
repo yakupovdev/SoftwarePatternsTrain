@@ -4,9 +4,9 @@ public class Director {
 
     public static Plane constructBoeing747(){
         return  new PlaneBuilderImpl()
-                .setName("Boeing 747").
-                setLength(70.6).
-                setWingspan(64.4)
+                .setName("Boeing 747")
+                .setLength(70.6)
+                .setWingspan(64.4)
                 .setHeight(19.4)
                 .setFlightRange(13850)
                 .setMaxCruisingSpeed(933)
