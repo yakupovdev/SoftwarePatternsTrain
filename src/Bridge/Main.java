@@ -6,13 +6,22 @@ import Bridge.skills.*;
 
 public class Main {
     public static void main(String[] args) {
-        Hero warrior = new Warrior(new SwordImpl(), new HealImpl());
+        IWeapon weapon = new SwordImpl();
+        ISkill skill = new HealImpl();
+
+        Hero warrior = new Warrior(weapon, skill);
         warrior.fight();
 
-        Hero assassin = new Assassin(new BowImpl(), new TeleportImpl());
+        weapon = new BowImpl();
+        skill = new TeleportImpl();
+
+        Hero assassin = new Assassin(weapon, skill);
         assassin.fight();
 
-        Hero mage = new Mage(new MagicStaffImpl(), new CriticalStrikeImpl());
+        weapon = new MagicStaffImpl();
+        skill = new CriticalStrikeImpl();
+
+        Hero mage = new Mage(weapon, skill);
         mage.fight();
     }
 }
