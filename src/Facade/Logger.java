@@ -1,4 +1,7 @@
 package Facade;
 
-public class Logger {
+class Logger {
+    public void log(String message) {
+        System.out.println("[LOG] " + message);
+    }
 }
