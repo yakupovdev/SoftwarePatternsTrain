@@ -1,5 +1,8 @@
 package Facade;
 
+import Facade.facade.*;
+import Facade.components.*;
+
 public class Main {
     public static void main(String[] args) {
         UserFacade userFacade = new UserFacade();

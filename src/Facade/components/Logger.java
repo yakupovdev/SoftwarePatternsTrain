@@ -1,7 +1,7 @@
-package Facade;
+package Facade.components;
 
-class Logger {
+public class Logger {
     public void log(String message) {
-        System.out.println("[LOG] " + message);
+        System.out.printf("[LOG] %s \n", message);
     }
 }
