@@ -1,13 +1,8 @@
 package Facade;
 
 class UserFacade {
-    private final UserDatabase database;
-    private final Logger logger;
-
-    public UserFacade() {
-        this.database = new UserDatabase();
-        this.logger = new Logger();
-    }
+    private final UserDatabase database = new UserDatabase();
+    private final Logger logger = new Logger();
 
     public void registerUser(String login, String password) {
         System.out.println("\n=== Registering new user ===");

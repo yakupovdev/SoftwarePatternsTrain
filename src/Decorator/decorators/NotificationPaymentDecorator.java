@@ -1,4 +1,6 @@
-package Decorator;
+package Decorator.decorators;
+
+import Decorator.base.IPaymentProcessor;
 
 public class NotificationPaymentDecorator extends PaymentDecoratorImpl {
 
@@ -7,7 +9,7 @@ public class NotificationPaymentDecorator extends PaymentDecoratorImpl {
     }
 
     @Override
-    public boolean processPayment(double amount, String username) {
+    public boolean processPayment(float amount, String username) {
         boolean result = super.processPayment(amount, username);
         if (result) {
             sendNotification(username, amount);
@@ -16,6 +18,6 @@ public class NotificationPaymentDecorator extends PaymentDecoratorImpl {
     }
 
     private void sendNotification(String user, double amount) {
-        System.out.println("📩 Notification: Payment of " + amount + "$ for user " + user + " completed!");
+        System.out.printf("📩 Notification: Payment of %f $ for %s completed! \n", amount, user);
     }
 }
