@@ -17,7 +17,7 @@ public class NotificationPaymentDecorator extends PaymentDecoratorImpl {
         return result;
     }
 
-    private void sendNotification(String user, double amount) {
+    private void sendNotification(String user, float amount) {
         System.out.printf("📩 Notification: Payment of %f $ for %s completed! \n", amount, user);
     }
 }

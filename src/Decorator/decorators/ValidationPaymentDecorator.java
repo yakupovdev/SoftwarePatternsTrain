@@ -3,7 +3,8 @@ package Decorator.decorators;
 import Decorator.base.IPaymentProcessor;
 
 public class ValidationPaymentDecorator extends PaymentDecoratorImpl {
-    private String messageOfValidation = "Invalid amount or username";
+    private final String messageOfValidation = "Invalid amount or username";
+
     public ValidationPaymentDecorator(IPaymentProcessor payment) {
         super(payment);
     }
@@ -15,9 +16,5 @@ public class ValidationPaymentDecorator extends PaymentDecoratorImpl {
         } else{
             return super.processPayment(amount, username);
         }
-    }
-
-    public void setMessageOfValidation(String messageOfValidation) {
-        this.messageOfValidation = messageOfValidation;
     }
 }
