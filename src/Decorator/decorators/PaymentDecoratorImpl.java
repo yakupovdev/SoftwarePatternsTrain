@@ -9,6 +9,7 @@ public abstract class PaymentDecoratorImpl implements IPaymentProcessor {
         this.payment = payment;
     }
 
+
     @Override
     public boolean processPayment(float amount, String username) {
         return payment.processPayment(amount, username);
