@@ -6,7 +6,7 @@ import Observer.observers.IObserver;
 
 public class StoreImpl implements ISubject {
     private final List<IObserver> observers;
-    private String storeName;
+    private final String storeName;
 
     public StoreImpl(String storeName) {
         this.observers = new ArrayList<>();
