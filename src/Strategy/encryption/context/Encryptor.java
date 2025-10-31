@@ -1,4 +1,6 @@
-package Strategy.encryption;
+package Strategy.encryption.context;
+
+import Strategy.encryption.strategy.IEncryptionStrategy;
 
 public class Encryptor {
     private IEncryptionStrategy strategy;

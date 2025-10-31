@@ -1,4 +1,6 @@
-package Strategy.decryption;
+package Strategy.decryption.strategyImpl;
+
+import Strategy.decryption.strategy.IDecryptionStrategy;
 
 public class CaesarDecryptionImpl implements IDecryptionStrategy {
     private final int shift;

@@ -1,6 +1,8 @@
-package Strategy.encryption;
+package Strategy.encryption.strategyImpl;
 
-public class CaesarEncryptionImpl implements IEncryptionStrategy{
+import Strategy.encryption.strategy.IEncryptionStrategy;
+
+public class CaesarEncryptionImpl implements IEncryptionStrategy {
     private final int shift;
 
     public CaesarEncryptionImpl(int shift) {

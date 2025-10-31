@@ -1,4 +1,6 @@
-package Strategy.decryption;
+package Strategy.decryption.context;
+
+import Strategy.decryption.strategy.IDecryptionStrategy;
 
 public class Decryptor {
     private IDecryptionStrategy strategy;

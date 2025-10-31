@@ -1,4 +1,6 @@
-package Strategy.encryption;
+package Strategy.encryption.strategyImpl;
+
+import Strategy.encryption.strategy.IEncryptionStrategy;
 
 public class ReverseEncryptionImpl implements IEncryptionStrategy {
     @Override
