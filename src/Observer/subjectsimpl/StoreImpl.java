@@ -1,8 +1,9 @@
-package Observer.subjects;
+package Observer.subjectsimpl;
 
 import java.util.ArrayList;
 import java.util.List;
 import Observer.observers.IObserver;
+import Observer.subjects.ISubject;
 
 public class StoreImpl implements ISubject {
     private final List<IObserver> observers;

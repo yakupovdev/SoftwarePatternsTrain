@@ -1,4 +1,6 @@
-package Observer.observers;
+package Observer.observersimpl;
+
+import Observer.observers.IObserver;
 
 public class EmailObserverImpl implements IObserver {
     @Override

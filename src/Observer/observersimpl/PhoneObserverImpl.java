@@ -1,4 +1,6 @@
-package Observer.observers;
+package Observer.observersimpl;
+
+import Observer.observers.IObserver;
 
 public class PhoneObserverImpl implements IObserver {
     @Override
