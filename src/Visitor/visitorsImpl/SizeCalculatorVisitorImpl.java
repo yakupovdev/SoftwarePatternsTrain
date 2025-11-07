@@ -24,4 +24,3 @@ public class SizeCalculatorVisitorImpl implements IVisitor {
         }
     }
 }
-
