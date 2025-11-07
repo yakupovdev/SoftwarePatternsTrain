@@ -9,9 +9,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        FileImpl file1 = new FileImpl("readme.txt", 1200);
+        FileImpl file1 = new FileImpl("readme.md", 1200);
         FileImpl file2 = new FileImpl("photo.jpg", 204800);
-        FileImpl file3 = new FileImpl("notes.md", 800);
+        FileImpl file3 = new FileImpl("notes.txt", 800);
 
         DirectoryImpl images = new DirectoryImpl("images", Arrays.asList(file2));
         DirectoryImpl docs = new DirectoryImpl("docs", Arrays.asList(file3));
