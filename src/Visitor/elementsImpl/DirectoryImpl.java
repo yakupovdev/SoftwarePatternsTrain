@@ -1,5 +1,6 @@
-package Visitor.elements;
+package Visitor.elementsImpl;
 
+import Visitor.elements.IElement;
 import Visitor.visitors.IVisitor;
 
 import java.util.List;

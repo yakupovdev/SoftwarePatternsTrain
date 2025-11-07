@@ -1,8 +1,9 @@
-package Visitor.visitors;
+package Visitor.visitorsImpl;
 
-import Visitor.elements.DirectoryImpl;
-import Visitor.elements.FileImpl;
+import Visitor.elementsImpl.DirectoryImpl;
+import Visitor.elementsImpl.FileImpl;
 import Visitor.elements.IElement;
+import Visitor.visitors.IVisitor;
 
 public class PrintStructureVisitorImpl implements IVisitor {
     private int indent = 0;

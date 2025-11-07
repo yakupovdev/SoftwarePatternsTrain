@@ -1,10 +1,11 @@
-package Visitor.elements;
+package Visitor.elementsImpl;
 
+import Visitor.elements.IElement;
 import Visitor.visitors.IVisitor;
 
 public class FileImpl implements IElement {
     private final String name;
-    private final int size; // байты
+    private final int size;
 
     public FileImpl(String name, int size) {
         this.name = name;

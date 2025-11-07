@@ -1,7 +1,7 @@
 package Visitor.visitors;
 
-import Visitor.elements.DirectoryImpl;
-import Visitor.elements.FileImpl;
+import Visitor.elementsImpl.DirectoryImpl;
+import Visitor.elementsImpl.FileImpl;
 
 public interface IVisitor {
     void visit(FileImpl file);

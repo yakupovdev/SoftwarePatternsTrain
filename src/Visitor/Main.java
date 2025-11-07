@@ -1,9 +1,9 @@
 package Visitor;
 
-import Visitor.elements.DirectoryImpl;
-import Visitor.elements.FileImpl;
-import Visitor.visitors.PrintStructureVisitorImpl;
-import Visitor.visitors.SizeCalculatorVisitorImpl;
+import Visitor.elementsImpl.DirectoryImpl;
+import Visitor.elementsImpl.FileImpl;
+import Visitor.visitorsImpl.PrintStructureVisitorImpl;
+import Visitor.visitorsImpl.SizeCalculatorVisitorImpl;
 
 import java.util.Arrays;
 
