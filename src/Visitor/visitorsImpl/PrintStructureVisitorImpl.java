@@ -2,7 +2,6 @@ package Visitor.visitorsImpl;
 
 import Visitor.elementsImpl.DirectoryImpl;
 import Visitor.elementsImpl.FileImpl;
-import Visitor.elements.IElement;
 import Visitor.visitors.IVisitor;
 
 public class PrintStructureVisitorImpl implements IVisitor {
@@ -23,9 +22,7 @@ public class PrintStructureVisitorImpl implements IVisitor {
         printIndent();
         System.out.println("+ " + directory.getName() + "/");
         indent++;
-        for (IElement e : directory.getChildren()) {
-            e.accept(this);
-        }
+        directory.getChildren().forEach(child -> child.accept(this));
         indent--;
     }
 }

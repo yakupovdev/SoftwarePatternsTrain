@@ -2,7 +2,6 @@ package Visitor.visitorsImpl;
 
 import Visitor.elementsImpl.DirectoryImpl;
 import Visitor.elementsImpl.FileImpl;
-import Visitor.elements.IElement;
 import Visitor.visitors.IVisitor;
 
 public class SizeCalculatorVisitorImpl implements IVisitor {
@@ -19,8 +18,6 @@ public class SizeCalculatorVisitorImpl implements IVisitor {
 
     @Override
     public void visit(DirectoryImpl directory) {
-        for (IElement e : directory.getChildren()) {
-            e.accept(this);
-        }
+        directory.getChildren().forEach(child -> child.accept(this));
     }
 }
